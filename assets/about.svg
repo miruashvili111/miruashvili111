@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="477" viewBox="0 0 900 477" fill="none">
+  <defs>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2f7bf5"/><stop offset=".5" stop-color="#904e95"/><stop offset="1" stop-color="#e05397"/>
+    </linearGradient>
+    <linearGradient id="border" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2f7bf5" stop-opacity=".9"/><stop offset=".5" stop-color="#904e95" stop-opacity=".5"/><stop offset="1" stop-color="#e05397" stop-opacity=".9"/>
+    </linearGradient>
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1.2" fill="#ffffff" fill-opacity=".06"/>
+    </pattern>
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="45"/></filter>
+    
+    <clipPath id="cardclip"><rect x="1" y="1" width="898" height="475" rx="18"/></clipPath>
+  </defs>
+  <style>
+    text { font-family: 'Segoe UI', Ubuntu, 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+    .mono { font-family: 'JetBrains Mono', 'Fira Code', SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace; }
+    
+    .line { opacity: 0; animation: typein .5s ease-out forwards; }
+    @keyframes typein { from { opacity: 0; transform: translateX(-12px); } to { opacity: 1; transform: translateX(0); } }
+    .cursor { opacity: 0; animation: show 0s forwards, blink 1s steps(1) infinite; }
+    @keyframes show { to { opacity: 1; } }
+    @keyframes blink { 50% { opacity: 0; } }
+    .glow { animation: glow 6s ease-in-out infinite alternate; }
+    @keyframes glow { from { transform: translate(0,0); } to { transform: translate(-200px, 40px); } }
+    
+  </style>
+  <g clip-path="url(#cardclip)">
+    <rect width="900" height="477" fill="#0d1117"/>
+    <rect width="900" height="477" fill="url(#dots)"/>
+    
+    <g filter="url(#blur)" opacity=".35"><circle class="glow" cx="760" cy="120" r="110" fill="#904e95"/></g>
+    <rect x="0" y="0" width="900" height="46" fill="#161b22"/>
+    <line x1="0" y1="46" x2="900" y2="46" stroke="#30363d"/>
+    <circle cx="26" cy="23" r="6.5" fill="#ff5f57"/><circle cx="48" cy="23" r="6.5" fill="#febc2e"/><circle cx="70" cy="23" r="6.5" fill="#28c840"/>
+    <rect x="100" y="8" width="150" height="38" rx="8" fill="#0d1117"/>
+    <rect x="100" y="44" width="150" height="2" fill="url(#brand)"/>
+    <rect x="114" y="20" width="18" height="14" rx="3" fill="#3178c6"/>
+    <text x="117" y="31" font-size="9" font-weight="800" fill="#fff">TS</text>
+    <text x="140" y="32" class="mono" font-size="13" fill="#e6edf3">about-me.ts</text>
+    <text x="880" y="30" text-anchor="end" font-size="13" fill="#8b949e" font-weight="600">ABOUT ME</text>
+    <g class="line" style="animation-delay:0.40s"><text x="44" y="92" class="mono" fill="#484f58" font-size="14" text-anchor="end">1</text><text x="64" y="92" class="mono" font-size="15" xml:space="preserve"><tspan fill="#8b949e">// about-me.ts</tspan></text></g><g class="line" style="animation-delay:0.58s"><text x="44" y="119" class="mono" fill="#484f58" font-size="14" text-anchor="end">2</text><text x="64" y="119" class="mono" font-size="15" xml:space="preserve"><tspan fill="#ff7b72">const </tspan><tspan fill="#d2a8ff">giorgi</tspan><tspan fill="#c9d1d9"> = {</tspan></text></g><g class="line" style="animation-delay:0.76s"><text x="44" y="146" class="mono" fill="#484f58" font-size="14" text-anchor="end">3</text><text x="64" y="146" class="mono" font-size="15" xml:space="preserve"><tspan fill="#c9d1d9">  </tspan><tspan fill="#79c0ff">name</tspan><tspan fill="#c9d1d9">: </tspan><tspan fill="#a5d6ff">"Giorgi Miruashvili"</tspan><tspan fill="#c9d1d9">,</tspan></text></g><g class="line" style="animation-delay:0.94s"><text x="44" y="173" class="mono" fill="#484f58" font-size="14" text-anchor="end">4</text><text x="64" y="173" class="mono" font-size="15" xml:space="preserve"><tspan fill="#c9d1d9">  </tspan><tspan fill="#79c0ff">role</tspan><tspan fill="#c9d1d9">: </tspan><tspan fill="#a5d6ff">"Full-Stack Developer"</tspan><tspan fill="#c9d1d9">,</tspan></text></g><g class="line" style="animation-delay:1.12s"><text x="44" y="200" class="mono" fill="#484f58" font-size="14" text-anchor="end">5</text><text x="64" y="200" class="mono" font-size="15" xml:space="preserve"><tspan fill="#c9d1d9">  </tspan><tspan fill="#79c0ff">location</tspan><tspan fill="#c9d1d9">: </tspan><tspan fill="#a5d6ff">"Georgia"</tspan><tspan fill="#c9d1d9">,</tspan></text></g><g class="line" style="animation-delay:1.30s"><text x="44" y="227" class="mono" fill="#484f58" font-size="14" text-anchor="end">6</text><text x="64" y="227" class="mono" font-size="15" xml:space="preserve"><tspan fill="#c9d1d9">  </tspan><tspan fill="#79c0ff">frontend</tspan><tspan fill="#c9d1d9">: </tspan><tspan fill="#c9d1d9">[</tspan><tspan fill="#a5d6ff">"React"</tspan><tspan fill="#c9d1d9">, </tspan><tspan fill="#a5d6ff">"Next.js"</tspan><tspan fill="#c9d1d9">, </tspan><tspan fill="#a5d6ff">"MUI"</tspan><tspan fill="#c9d1d9">, </tspan><tspan fill="#a5d6ff">"Tailwind CSS"</tspan><tspan fill="#c9d1d9">],</tspan></text></g><g class="line" style="animation-delay:1.48s"><text x="44" y="254" class="mono" fill="#484f58" font-size="14" text-anchor="end">7</text><text x="64" y="254" class="mono" font-size="15" xml:space="preserve"><tspan fill="#c9d1d9">  </tspan><tspan fill="#79c0ff">mobile</tspan><tspan fill="#c9d1d9">: </tspan><tspan fill="#c9d1d9">[</tspan><tspan fill="#a5d6ff">"React Native"</tspan><tspan fill="#c9d1d9">],</tspan></text></g><g class="line" style="animation-delay:1.66s"><text x="44" y="281" class="mono" fill="#484f58" font-size="14" text-anchor="end">8</text><text x="64" y="281" class="mono" font-size="15" xml:space="preserve"><tspan fill="#c9d1d9">  </tspan><tspan fill="#79c0ff">backend</tspan><tspan fill="#c9d1d9">: </tspan><tspan fill="#c9d1d9">[</tspan><tspan fill="#a5d6ff">"Node.js"</tspan><tspan fill="#c9d1d9">, </tspan><tspan fill="#a5d6ff">"NestJS"</tspan><tspan fill="#c9d1d9">, </tspan><tspan fill="#a5d6ff">".NET (basics)"</tspan><tspan fill="#c9d1d9">],</tspan></text></g><g class="line" style="animation-delay:1.84s"><text x="44" y="308" class="mono" fill="#484f58" font-size="14" text-anchor="end">9</text><text x="64" y="308" class="mono" font-size="15" xml:space="preserve"><tspan fill="#c9d1d9">  </tspan><tspan fill="#79c0ff">databases</tspan><tspan fill="#c9d1d9">: </tspan><tspan fill="#c9d1d9">[</tspan><tspan fill="#a5d6ff">"PostgreSQL"</tspan><tspan fill="#c9d1d9">, </tspan><tspan fill="#a5d6ff">"MongoDB"</tspan><tspan fill="#c9d1d9">, </tspan><tspan fill="#a5d6ff">"MySQL"</tspan><tspan fill="#c9d1d9">],</tspan></text></g><g class="line" style="animation-delay:2.02s"><text x="44" y="335" class="mono" fill="#484f58" font-size="14" text-anchor="end">10</text><text x="64" y="335" class="mono" font-size="15" xml:space="preserve"><tspan fill="#c9d1d9">  </tspan><tspan fill="#79c0ff">devops</tspan><tspan fill="#c9d1d9">: </tspan><tspan fill="#c9d1d9">[</tspan><tspan fill="#a5d6ff">"Docker"</tspan><tspan fill="#c9d1d9">, </tspan><tspan fill="#a5d6ff">"Kubernetes"</tspan><tspan fill="#c9d1d9">, </tspan><tspan fill="#a5d6ff">"CI/CD"</tspan><tspan fill="#c9d1d9">, </tspan><tspan fill="#a5d6ff">"AWS"</tspan><tspan fill="#c9d1d9">],</tspan></text></g><g class="line" style="animation-delay:2.20s"><text x="44" y="362" class="mono" fill="#484f58" font-size="14" text-anchor="end">11</text><text x="64" y="362" class="mono" font-size="15" xml:space="preserve"><tspan fill="#c9d1d9">  </tspan><tspan fill="#79c0ff">aiTools</tspan><tspan fill="#c9d1d9">: </tspan><tspan fill="#c9d1d9">[</tspan><tspan fill="#a5d6ff">"Claude Code"</tspan><tspan fill="#c9d1d9">, </tspan><tspan fill="#a5d6ff">"ChatGPT"</tspan><tspan fill="#c9d1d9">],</tspan></text></g><g class="line" style="animation-delay:2.38s"><text x="44" y="389" class="mono" fill="#484f58" font-size="14" text-anchor="end">12</text><text x="64" y="389" class="mono" font-size="15" xml:space="preserve"><tspan fill="#c9d1d9">  </tspan><tspan fill="#79c0ff">motto</tspan><tspan fill="#c9d1d9">: </tspan><tspan fill="#a5d6ff">"Turning coffee into clean code"</tspan><tspan fill="#c9d1d9">,</tspan></text></g><g class="line" style="animation-delay:2.56s"><text x="44" y="416" class="mono" fill="#484f58" font-size="14" text-anchor="end">13</text><text x="64" y="416" class="mono" font-size="15" xml:space="preserve"><tspan fill="#c9d1d9">};</tspan></text></g>
+    <rect class="cursor" style="animation-delay:2.74s, 2.74s" x="85" y="401" width="9" height="19" fill="#e05397"/>
+    
+  </g>
+  <rect x="1" y="1" width="898" height="475" rx="18" stroke="url(#border)" stroke-width="1.5"/>
+</svg>
